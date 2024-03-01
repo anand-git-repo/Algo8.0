@@ -1,0 +1,52 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SelfHealth Care</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+    }
+
+    .heart-container {
+        position: relative;
+    }
+
+    .heart {
+        position: relative;
+        z-index: 1;
+    }
+
+    .name {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        color: white;
+        mix-blend-mode: screen; /* Blend mode to blend with underlying image */
+        z-index: 2;
+    }
+</style>
+</head>
+<body>
+<div class="heart-container">
+    <!-- Heart SVG Image -->
+    <div class="heart">
+        <img src="https://cdn.svgator.com/images/2023/06/hearthbeat-svg-loader-animation.svg" alt="Heart Monitor SVG loader animation" loading="lazy" width="1400" height="600">
+    </div>
+    <!-- SelfHealth Text -->
+    <div class="name">SelfHealth Care</div>
+</div>
+</body>
+</html>
